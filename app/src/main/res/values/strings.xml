@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Lonely Gamer</string>
+
+
+    <string name="console_prompt">Choose a console</string>
+    <string-array name="console_array">
+        <item>Xbox One</item>
+        <item>PS4</item>
+        <item>Epic Games</item>
+        <item>BNet</item>
+        <item>Steam</item>
+        <item>Origin</item>
+        <item>PC</item>
+        <item>Xbox 360</item>
+        <item>PS3</item>
+    </string-array>
+
+    <string name="mic_prompt">Mic or no Mic</string>
+    <string-array name="mic_array">
+        <item>Required</item>
+        <item>Not Required</item>
+    </string-array>
+
+    <string name="console_gamertag">Pick desired console</string>
+    <string-array name="gamertag_array">
+        <item>Xbox One</item>
+        <item>PS4</item>
+        <item>Epic Games</item>
+        <item>BNet</item>
+        <item>Steam</item>
+        <item>Origin</item>
+        <item>PC</item>
+        <item>Xbox 360</item>
+        <item>PS3</item>]
+    </string-array>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string name="home">POPULAR GAMES</string>
+    <string name="chat">LOBBY</string>
+    <string name="help">GUIDE</string>
+    <string name="lobbies">LOBBIES</string>
+    <string name="profile">PROFILE</string>
+    <string name="createlobby">CREATE LOBBY</string>
+    <string name="joinlobby">JOIN LOBBY</string>
+
+
+</resources>

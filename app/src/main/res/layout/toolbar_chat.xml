@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:layout_marginTop="0dp"
+    android:id="@+id/chatToolbar"
+    android:background="#464646">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif"
+        android:gravity="center|center"
+        android:text="@string/chat"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/leaveLobby"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dp"
+        android:background="@mipmap/leavelobby"
+        android:gravity="right|center" />
+
+    <Button
+        android:id="@+id/displayUsers"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="20dp"
+        android:background="@mipmap/groupusers"
+        android:gravity="right|center" />
+
+</android.support.v7.widget.Toolbar>

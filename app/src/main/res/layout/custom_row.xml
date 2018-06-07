@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/gameImageID"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/rounded_frame"
+        android:scaleType="centerCrop"
+        app:srcCompat="@mipmap/tempimg" />
+
+    <TextView
+        android:id="@+id/gameNameID"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/rounded_frame2"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:maxLines="1"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMaxTextSize="24sp"
+        android:autoSizeMinTextSize="6sp"
+        android:autoSizeStepGranularity="2sp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:text="TextView"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gameNameID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="70dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnJoinLobby"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_frame3"
+            android:fontFamily="sans-serif-condensed"
+            android:onClick="myClickHandlerJoin"
+            android:text="Join Lobby"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/btnCreateLobby"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_frame4"
+            android:fontFamily="sans-serif-condensed"
+            android:onClick="myClickHandlerCreate"
+            android:text="Create Lobby"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "718079533152",
+    "firebase_url": "https://lonely-gamer-fa6fc.firebaseio.com",
+    "project_id": "lonely-gamer-fa6fc",
+    "storage_bucket": "lonely-gamer-fa6fc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:718079533152:android:3a30493558f084ab",
+        "android_client_info": {
+          "package_name": "com.lonelygamer.dmc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "718079533152-8o57s6hd1n3s7udruorbiv14duh4amjk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lonelygamer.dmc",
+            "certificate_hash": "6722b8cafcc81b088a1c1f7d4a20bd8da5d298da"
+          }
+        },
+        {
+          "client_id": "718079533152-af2rvbmb7jv4ebohvrl7j02mccodu8bu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgTI3aUhVbAxT-iCa6v8UTagnsbYkv5O8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "718079533152-af2rvbmb7jv4ebohvrl7j02mccodu8bu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

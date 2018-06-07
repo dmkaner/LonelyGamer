@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lonelygamer.dmc.LandingLogin"
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="270dp"
+        android:layout_height="41dp"
+        android:text="Sign Up"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/rounded_frame4"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_below="@+id/btnSignIn"
+        android:layout_alignStart="@+id/btnSignIn" />
+
+    <ImageView
+        android:id="@+id/landingBG"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@mipmap/lonelygamerlandingart"
+        android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:id="@+id/lgLogo"
+        android:layout_width="350dp"
+        android:layout_height="231dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@mipmap/landingpageimg"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/emailIn"
+        android:layout_width="270dp"
+        android:layout_height="46dp"
+        android:background="@mipmap/inputemailbar"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="40dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textColorLink="@android:color/white"
+        android:layout_below="@+id/lgLogo"
+        android:layout_alignStart="@+id/btnSignIn"
+        android:layout_marginTop="18dp" />
+
+    <EditText
+        android:id="@+id/passwordIn"
+        android:layout_width="270dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:background="@mipmap/inputpasswordbar"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="40dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textColorLink="@android:color/white"
+        android:layout_below="@+id/emailIn"
+        android:layout_alignStart="@+id/emailIn" />
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="270dp"
+        android:layout_height="41dp"
+        android:layout_below="@+id/passwordIn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_frame3"
+        android:text="LOGIN"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:visibility="invisible"
+        app:SpinKit_Color="@android:color/white"/>
+
+    <!--<Button
+        android:id="@+id/googleIn"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="6dp"
+        android:background="@mipmap/google_icon"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btnSignUp"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/facebookIn"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@mipmap/facebookicon"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/btnSignUp"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/twitterIn"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@mipmap/twittericon"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"/>-->
+
+</RelativeLayout>

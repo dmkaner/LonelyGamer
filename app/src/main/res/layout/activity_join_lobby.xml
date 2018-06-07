@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lonelygamer.dmc.CreateLobby"
+    android:id="@+id/drawerLayout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/bgtile"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/clGameName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="140dp"
+            android:fontFamily="sans-serif"
+            android:text="TextView"
+            android:textColor="@android:color/white"
+            android:textSize="26sp" />
+
+        <Spinner
+            android:id="@+id/spinnerConsoleJoin"
+            android:layout_width="350dp"
+            android:layout_height="52dp"
+            android:layout_below="@+id/clGameName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@mipmap/consolepicker"
+            android:entries="@array/console_array"
+            android:paddingLeft="170dp"
+            android:prompt="@string/console_prompt" />
+
+        <EditText
+            android:id="@+id/inputPlayerCountJoin"
+            android:layout_width="350dp"
+            android:layout_height="52dp"
+            android:layout_below="@+id/spinnerConsoleJoin"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/countpicker"
+            android:ems="10"
+            android:hint="0"
+            android:inputType="number"
+            android:paddingLeft="170dp"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spinnerMicJoin"
+            android:layout_width="350dp"
+            android:layout_height="52dp"
+            android:layout_below="@+id/inputPlayerCountJoin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/micpicker"
+            android:entries="@array/mic_array"
+            android:paddingLeft="170dp"
+            android:prompt="@string/mic_prompt" />
+
+        <Button
+            android:id="@+id/submitLobbyRequest"
+            android:layout_width="350dp"
+            android:layout_height="44dp"
+            android:layout_below="@+id/spinnerMicJoin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            android:background="@mipmap/lobbyinitiate"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_join_lobby"/>
+        <com.mindorks.placeholderview.PlaceHolderView
+            android:id="@+id/galleryView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="#444">
+
+        <com.mindorks.placeholderview.PlaceHolderView
+            android:id="@+id/drawerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+    </FrameLayout>
+
+</android.support.v4.widget.DrawerLayout>
