@@ -7,3 +7,5 @@ the folder up in the Android Studio application. There will most likely be some 
 to different enviorments so make sure to sync up the gradle files when prompted to. The main architecture
 of the app is split up file by file for each screen of the app. When ready to run, make sure to use the 
 local emulator. 
+
+Game on Google Play Store here: https://play.google.com/store/apps/details?id=com.lonelygamer.dmc
